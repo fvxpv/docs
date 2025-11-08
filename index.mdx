@@ -1,97 +1,404 @@
 ---
-title: "Introduction"
-description: "Welcome to the new home for your documentation"
+title: "New file"
+description: "Description of your new file."
 ---
 
-## Setting up
+---
 
-Get your documentation site up and running in minutes.
+title: "Command List"
 
-<Card
-  title="Start here"
-  icon="rocket"
-  href="/quickstart"
-  horizontal
->
-  Follow our three step quickstart guide.
-</Card>
+description: "A complete list of all available commands for BotName, organized by category."
 
-## Make it yours
+---
 
-Design a docs site that looks great and empowers your users.
+# 📚 Full Command Reference
 
-<Columns cols={2}>
-  <Card
-    title="Edit locally"
-    icon="pen-to-square"
-    href="/development"
-  >
-    Edit your docs locally and preview them in real time.
-  </Card>
-  <Card
-    title="Customize your site"
-    icon="palette"
-    href="/essentials/settings"
-  >
-    Customize the design and colors of your site to match your brand.
-  </Card>
-    <Card
-    title="Set up navigation"
-    icon="map"
-    href="/essentials/navigation"
-  >
-    Organize your docs to help users find what they need and succeed with your product.
-  </Card>
-  <Card
-    title="API documentation"
-    icon="terminal"
-    href="/api-reference/introduction"
-  >
-    Auto-generate API documentation from OpenAPI specifications.
-  </Card>
-</Columns>
+This page provides an exhaustive list of all commands available in BotName, organized by category. The default prefix is \*`.`\*\* (a period), and all examples below use this prefix.
 
-## Create beautiful pages
+## 🛡️ Moderation
 
-Everything you need to create world-class documentation.
+| Command | Description |
 
-<Columns cols={2}>
-  <Card
-    title="Write with MDX"
-    icon="pen-fancy"
-    href="/essentials/markdown"
-  >
-    Use MDX to style your docs pages.
-  </Card>
-  <Card
-    title="Code samples"
-    icon="code"
-    href="/essentials/code"
-  >
-    Add sample code to demonstrate how to use your product.
-  </Card>
-  <Card
-    title="Images"
-    icon="image"
-    href="/essentials/images"
-  >
-    Display images and other media.
-  </Card>
-  <Card
-    title="Reusable snippets"
-    icon="recycle"
-    href="/essentials/reusable-snippets"
-  >
-    Write once and reuse across your docs.
-  </Card>
-</Columns>
+| :--- | :--- |
 
-## Need inspiration?
+| \*`.ban`\*\* | Ban a member |
 
-<Card
-  title="See complete examples"
-  icon="stars"
-  href="https://mintlify.com/customers"
->
-  Browse our showcase of exceptional documentation sites.
-</Card>
+| \*`.unban`\*\* | Unban a user |
+
+| \*`.kick`\*\* | Kick a member |
+
+| \*`.timeout`\*\* | Timeout a member |
+
+| \*`.untimeout`\*\* | Remove timeout |
+
+| \*`.warn`\*\* | Warn a member |
+
+| \*`.warn list`\*\* | List warnings for a user |
+
+| \*`.warn delete`\*\* | Delete a specific warning |
+
+| \*`.warn clear`\*\* | Clear all warnings for a user |
+
+| \*`.warn punishment`\*\* | Set punishment thresholds |
+
+| \*`.warn punishment list`\*\* | List punishment rules |
+
+| \*`.warn punishment reset`\*\* | Reset punishment rules |
+
+| \*`.hackban`\*\* | Ban by ID |
+
+| \*`.massban`\*\* | Ban multiple users |
+
+| \*`.unbanall`\*\* | Unban all users |
+
+| \*`.purge`\*\* | Bulk delete messages |
+
+| \*`.slowmode`\*\* | Set channel slowmode |
+
+| \*`.lock`\*\* | Lock a channel |
+
+| \*`.unlock`\*\* | Unlock a channel |
+
+| \*`.hide`\*\* | Hide a channel |
+
+| \*`.unhide`\*\* | Unhide a channel |
+
+| \*`.nuke`\*\* | Clone and delete channel |
+
+| \*`.strip`\*\* | Remove all roles from member |
+
+| \*`.shutup`\*\* | Auto-delete messages from member |
+
+| \*`.nick`\*\* | Change member nickname |
+
+| \*`.moveall`\*\* | Move all members between voice channels |
+
+### Moderation Logging
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.modlog`\*\* | Moderation logging |
+
+| \*`.modlog setup`\*\* | Initialize modlog |
+
+| \*`.modlog channel set`\*\* | Set log channel |
+
+| \*`.modlog toggle`\*\* | Enable/disable logging |
+
+| \*`.modlog event`\*\* | Toggle specific events |
+
+| \*`.modlog case`\*\* | View case details |
+
+| \*`.modlog user`\*\* | View user's cases |
+
+---
+
+## 🔒 Safety & Filters
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.filter add`\*\* | Add keyword filter |
+
+| \*`.filter list`\*\* | List keyword filters |
+
+| \*`.filter remove`\*\* | Remove keyword filter |
+
+| \*`.filter regex add`\*\* | Add regex filter |
+
+| \*`.filter regex list`\*\* | List regex filters |
+
+| \*`.filter regex remove`\*\* | Remove regex filter |
+
+| \*`.filter invite on`\*\* | Enable invite filter |
+
+| \*`.filter invite off`\*\* | Disable invite filter |
+
+| \*`.filter invite edit`\*\* | Edit invite filter |
+
+| \*`.disable`\*\* | Disable commands for users/channels |
+
+| \*`.enable`\*\* | Re-enable commands |
+
+---
+
+## 🛠️ Utility
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.help`\*\* | Show help menu |
+
+| \*`.ping`\*\* | Check bot latency |
+
+| \*`.botinfo`\*\* | Bot information |
+
+| \*`.serverinfo`\*\* | Server information |
+
+| \*`.userinfo`\*\* | User information |
+
+| \*`.servers`\*\* | List bot servers (owner only) |
+
+| \*`.leave`\*\* | Leave server (owner only) |
+
+| \*`.say`\*\* | Make bot say message |
+
+| \*`.roles`\*\* | Display user roles |
+
+| \*`.afk`\*\* | Set AFK status |
+
+| \*`.screenshot`\*\* | Screenshot a website |
+
+| \*`.meme`\*\* | Get random memes |
+
+| \*`.news`\*\* | Get news headlines |
+
+| \*`.tenor`\*\* | Search GIFs |
+
+### Prefix Management
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.prefix`\*\* | Manage prefixes |
+
+| \*`.prefix add`\*\* | Add guild prefix |
+
+| \*`.prefix remove`\*\* | Remove guild prefix |
+
+| \*`.prefix list`\*\* | List guild prefixes |
+
+| \*`.prefix self`\*\* | Set personal prefix |
+
+| \*`.prefix self toggle`\*\* | Toggle personal prefix |
+
+### Alias Management
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.alias`\*\* | Command aliases |
+
+| \*`.alias add`\*\* | Create alias |
+
+| \*`.alias remove`\*\* | Remove alias |
+
+| \*`.alias list`\*\* | List aliases |
+
+| \*`.alias clear`\*\* | Clear all aliases |
+
+---
+
+## 🔑 Role Management
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.role`\*\* | Give/remove roles |
+
+| \*`.role create`\*\* | Create new role |
+
+| \*`.role delete`\*\* | Delete role |
+
+| \*`.role duplicate`\*\* | Duplicate role |
+
+| \*`.role has remove`\*\* | Remove role from members with another role |
+
+| \*`.autorole`\*\* | Auto-assign roles |
+
+| \*`.vanity`\*\* | Award roles based on status/bio |
+
+---
+
+## 👋 Welcome System
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.welcome`\*\* | Welcome messages |
+
+| \*`.welcome add`\*\* | Add welcome message |
+
+| \*`.welcome remove`\*\* | Remove welcome message |
+
+| \*`.welcome list`\*\* | List welcome messages |
+
+| \*`.welcome clear`\*\* | Clear all welcome messages |
+
+| \*`.welcome variables`\*\* | Show available variables |
+
+| \*`.welcome preview`\*\* | Preview welcome message |
+
+| \*`.welcome move`\*\* | Move welcome to another channel |
+
+---
+
+## 💬 Custom Messages & Automation
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.invoke set`\*\* | Set custom message for moderation actions |
+
+| \*`.invoke reset`\*\* | Reset custom message |
+
+| \*`.invoke list`\*\* | List custom messages |
+
+| \*`.invoke preview`\*\* | Preview custom message |
+
+| \*`.invoke clear`\*\* | Clear all custom messages |
+
+| \*`.autoresponder`\*\* | Auto-respond to triggers |
+
+| \*`.stickymessage`\*\* | Sticky messages in channels |
+
+---
+
+## 🎨 Emoji & Stickers
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.emoji steal`\*\* | Steal single emoji |
+
+| \*`.emoji add`\*\* | Steal multiple emojis |
+
+| \*`.sticker steal`\*\* | Steal sticker |
+
+---
+
+## 🕹️ Fun & Games
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.8ball`\*\* | Magic 8ball |
+
+| \*`.avatar`\*\* | Display avatar |
+
+| \*`.calculator`\*\* | Calculate expressions |
+
+| \*`.dice`\*\* | Roll dice |
+
+| \*`.minesweeper`\*\* | Generate minesweeper game |
+
+| \*`.poll`\*\* | Create timed poll |
+
+| \*`.reverse`\*\* | Reverse text |
+
+| \*`.rps`\*\* | Rock, paper, scissors |
+
+---
+
+## 🎁 Giveaways
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.giveaway start`\*\* | Start giveaway |
+
+| \*`.giveaway end`\*\* | End giveaway early |
+
+| \*`.giveaway reroll`\*\* | Reroll winners |
+
+| \*`.giveaway cancel`\*\* | Cancel giveaway |
+
+| \*`.giveaway list`\*\* | List active giveaways |
+
+---
+
+## ⭐ Starboard
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.starboard set`\*\* | Set starboard channel |
+
+| \*`.starboard threshold`\*\* | Set reaction threshold |
+
+| \*`.starboard emoji`\*\* | Set reaction emoji |
+
+| \*`.starboard selfstar`\*\* | Toggle selfstar |
+
+| \*`.starboard color`\*\* | Set embed color |
+
+| \*`.starboard timestamp`\*\* | Toggle timestamp |
+
+| \*`.starboard ignore`\*\* | Ignore channel/role/member |
+
+---
+
+## 🎫 Tickets
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.ticket setup`\*\* | Send ticket panel |
+
+| \*`.ticket support`\*\* | Set support roles |
+
+| \*`.ticket category`\*\* | Set ticket category |
+
+| \*`.ticket add`\*\* | Add user to ticket |
+
+| \*`.ticket remove`\*\* | Remove user from ticket |
+
+| \*`.ticket rename`\*\* | Rename ticket channel |
+
+| \*`.ticket inactivity`\*\* | Toggle inactivity detection |
+
+| \*`.ticket timeout`\*\* | Set inactivity timeout |
+
+| \*`.ticket dms`\*\* | Toggle DM notifications |
+
+| \*`.ticket logs`\*\* | Set logs channel |
+
+| \*`.ticket logsevents`\*\* | Toggle log events |
+
+| \*`.ticket reset`\*\* | Reset ticket system |
+
+---
+
+## 🪙 Cryptocurrency
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.crypto`\*\* | Crypto price tracking |
+
+| \*`.crypto convert`\*\* | Convert between currencies |
+
+| \*`.crypto price`\*\* | Get crypto price |
+
+---
+
+## 🎂 Birthday System
+
+| Command | Description |
+
+| :--- | :--- |
+
+| \*`.birthday set`\*\* | Set your birthday |
+
+| \*`.birthday reset`\*\* | Reset your birthday |
+
+| \*`.birthday next`\*\* | See next birthday |
+
+| \*`.birthday channel set`\*\* | Set announcement channel |
+
+| \*`.birthday role add`\*\* | Set birthday role |
